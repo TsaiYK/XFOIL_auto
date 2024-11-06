@@ -13,8 +13,9 @@ Re = para.Re; % Reynold number
 Mach = para.Mach;
 numNodes = para.numNodes;
 
-NACA = para.NACA;
-[CL,CD,Cp,X0,Y0] = xfoil(NACA,alpha,Re,Mach,numNodes);
+% NACA = para.NACA;
+% [CL,CD,Cp,X0,Y0] = xfoil(NACA,alpha,Re,Mach,numNodes);
+[CL,CD,Cp,X0,Y0] = xfoil_given_geo(Filename,alpha,Re,Mach,numNodes);
 
 % output.CL_over_CD = CL/CD;
 output.CL = CL;
