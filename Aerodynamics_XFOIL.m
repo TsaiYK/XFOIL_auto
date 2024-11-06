@@ -1,4 +1,4 @@
-function output = Aerodynamics_XFOIL(para)
+function output = Aerodynamics_XFOIL(para,Filename)
 % Input the airfoil coordinates instead of the NACA code.
 
 %% Parameters
