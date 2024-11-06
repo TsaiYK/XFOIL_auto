@@ -14,7 +14,7 @@ para.Re = 2.78e5; % Reynold number
 para.Mach = para.U/343;
 
 %% XFOIL simulation
-FluidOutput = Aerodynamics_XFOIL(para);
+FluidOutput = Aerodynamics_XFOIL(para,'Airfoil_coordinate_CST.txt');
 Cp = FluidOutput.Cp; % positive: out of the airfoil
 P = FluidOutput.P;
 L = FluidOutput.L;
